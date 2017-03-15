@@ -25,7 +25,7 @@ namespace Events
         private static bool ExecuteNextCommand()
         {
             string command = Console.ReadLine();
-            if (command == null)
+            if (string.IsNullOrEmpty(command))
             {
                 return false;
             }
